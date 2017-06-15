@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>STC|CART</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product div{
+            display: inline-block;
+        }
+        .product .productImg{
+            margin: 10px;
+            width: 60px;
+            height: 40px;
+            overflow: hidden;
+        }
+        .product{
+            height: 40px;
+        }
+        .product .productName{
+            height: 40px;
+            line-height: 40px;
+            margin: 10px;
+            padding-top: 20px;
+        }
+        #wishListItems{
+            width: 100%;
+        }
+        .product .productDiscription{
+            width: 50%;
+            height: 30px;
+            text-overflow: ellipsis;
+            font-size: 12px;
+        }
+        .product .productImg img{
+            width: 50px;
+            text-align: top;
+            border-radius: 50%;
+            border:2px solid whitesmoke;
+            box-shadow: 0px 0px 2px black;
+        }
+        .delet{
+            height: 40px;
+            line-height: 40px;
+            margin: 10px;
+            display: inline-block;
+            color: silver;
+            cursor: pointer
+        }
+        .delet:hover{
+            color: gray;
+        }
+        
+    </style>
+    <link href="font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="head">
+    <div id="cart"></div>        
+        <nav id='navToAdd'>
+            <a href="index.html">
+                <img src="svg/logo.svg" class="logo" alt="">
+            </a>                
+        <ul>
+            <li class="main_nav">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="main_nav">
+                <a href="about.html">ABOUT</a>
+            </li>
+            <li class="main_nav" id="drop">
+            <p>PRODUCT</p>
+            <ul class="down">
+                <li class="down_li">
+                    <a href="round_product.html">ROUNDE BAR</a>
+                </li>
+                <li class="down_li">
+                    <a href="flat_product.html">FLAT BAR</a>
+                </li>
+                <li class="down_li">
+                    <a href="hexagon_product.html">HEXAGON BAR</a>
+                </li>
+            </ul>
+            </li>
+            <li class="main_nav" id="block">
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav> 
+    </div>
+    <div class="clear"></div>
+    <div id="body">
+    <div class="clear"></div>
+        <!--<div class="wishLst"></div>-->
+        <div id="wishList">
+            <h1 style="background-color:#00686B;  text-align: center;" >Check Your Wish list</h1>
+            <!--<table id="cartHeadin">
+
+            </table>-->
+                <table id="wishListItems">
+
+                </table>
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+    <footer>
+        <div id="footerWraper">
+            <div class="footerItem">
+                <div>
+                    <h2><a href="index.html">Steel Trading Co.</a></h2>
+                    <p>
+                        All Contain Is Make By Ghulam Mustafa
+                    </p>
+                </div>
+            </div>
+            <div class="footerItem">
+                <form action="#">
+                    <input type="email" id="semail" placeholder="Email">
+                    <input type="submit" id="sub" value="Subscribe"/>
+                </form>
+            </div>
+            <div class="footerItem">
+                <div class="footerLinks">
+                    <span class="footerLink" >
+                        <object type="image/svg+xml" width="30px" data="svg/fb.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/twitter.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/gplus.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/mail.svg" class="footerSvg"></object>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/object.js"></script> 
+    <script src="script/wishlist.js"></script> 
+    <script src="script/render product.js"></script> 
+    <script src="script/cart.js"></script> 
+    <script>
+        renderWishList();
+    </script>        
+</body>
+</html>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>STC|PRODUCTS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .w100,img{
+            width:100%
+        }
+        .w30{
+            width:70%
+        }
+        
+        .th{
+            background-color:#00686B;
+            color:#ffffff;
+            padding:5px;
+            text-align:center;
+            /*! font-size: 87px; */
+        }
+         .vat{
+             margin-bottom: 230px;
+         }
+    </style>
+    <link href="font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="head">
+    <div id="cart"></div>        
+    <nav id='navToAdd'>
+            <a href="index.html">
+                <img src="svg/logo.svg" class="logo" alt="">
+            </a>                    
+        <ul>
+            <li class="main_nav">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="main_nav">
+                <a href="about.html">ABOUT</a>
+            </li>
+            <li class="main_nav active" id="drop">
+            <p>PRODUCT</p>
+            <ul class="down">
+                <li class="down_li">
+                    <a href="round_product.html">ROUNDE BAR</a>
+                </li>
+                <li class="down_li">
+                    <a href="flat_product.html">FLAT BAR</a>
+                </li>
+                <li class="down_li">
+                    <a href="hexagon_product.html">HEXAGON BAR</a>
+                </li>
+            </ul>
+            </li>
+            <li class="main_nav" id="block">
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav> 
+    </div>
+    <div class="clear"></div>
+    <div id="body">
+        <div class="clear"></div>
+        <div id="round">
+            <h1 style="background-color:#00686B;  text-align: center;" >Round Bars</h1>
+            <div id="roundProduct">
+                
+            </div>   
+        </div>
+        <div class="clear"></div>
+        
+    </div>
+    <footer>
+        <div id="footerWraper">
+            <div class="footerItem">
+                <div>
+                    <h2><a href="index.html">Steel Trading Co.</a></h2>
+                    <p>
+                        All Contain Is Make By Ghulam Mustafa
+                    </p>
+                </div>
+            </div>
+            <div class="footerItem">
+                <form action="#">
+                    <input type="email" id="semail" placeholder="Email">
+                    <input type="submit" id="sub" value="Subscribe"/>
+                </form>
+            </div>
+            <div class="footerItem">
+                <div class="footerLinks">
+                    <span class="footerLink" >
+                        <object type="image/svg+xml" width="30px" data="svg/fb.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/twitter.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/gplus.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/mail.svg" class="footerSvg"></object>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/object.js"></script> 
+    <script src="script/wishlist.js"></script> 
+    <script src="script/render product.js"></script> 
+    <script src="script/cart.js"></script> 
+    <script>
+        renderRound();
+    </script>        
+</body>
+</html>

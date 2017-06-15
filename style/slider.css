@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    /*padding: 0;*/
+}
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+#slider{
+    /*top:20px;
+    margin: 10px 0;*/
+    position: relative;
+    width:100%;
+    /*height:400px;*/
+    overflow: hidden;
+    /*border-radius: 50px;*/
+    border:5px solid #008b8b;
+    /* 801515*/
+    border-width: 5px 0px;
+    box-shadow:  0px -5px 0px #fff ,
+                 0px  5px 0px #fff
+    ;
+}
+#slider img.slide{
+    height: 100%;
+    margin: 0px;
+    display: inline-block;
+} 
+#slider .btn:hover{
+    background-color: #333;
+    
+}
+#slider .btn{
+    display:inline-block;
+    width:30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    font-family: FormalistScript-Regular;
+    color:#fff;
+    font-size: 150%;
+    font-weight: 900;
+    background-color: #999;
+    border: 2px solid #fff;
+    position: absolute;
+    top : 180px;
+    cursor:pointer;
+    padding: 5px;
+}
+#slider .sliderControl{
+    opacity:0;
+    transition: opacity 200ms;
+}
+#slider:hover .sliderControl{
+    display: inline;
+    opacity: 1;
+}
+
+#slider .left{
+    left:10px;
+}
+#slider .right{
+    right:10px;
+}
+#slider #circle{
+    position: absolute;
+    bottom: 10px;
+}
+#slider #circle .btnD {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 2px;
+    background-color: black;
+    border: 1px solid white;
+    display: inline-block;
+    cursor:pointer;
+    animation: animationForDeActive 500ms;
+}
+#slider #circle .btnD.active {
+    background-color: white;
+    border: 1px solid black;
+    animation: animationForActive 500ms;
+}
+@keyframes animationForActive{
+    from{background-color: black;border: 1px solid white;}
+    to {background-color: white;border: 1px solid black;}
+}
+@keyframes animationForDeActive{
+    from {background-color: white;border: 1px solid black;}
+    to   {background-color: black;border: 1px solid white;}
+}
+#slider #slide{
+    position: absolute;
+    left:0px;
+}

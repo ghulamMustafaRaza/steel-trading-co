@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>STC|HOME</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+		.td_img{
+			width: 100%;
+			padding: 0px;
+			background-color: #efefef
+		}
+		.img_td{
+			width: 16.66666666666667%;
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+    <link href="font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/slider.css">
+</head>
+<body>
+    <div id="head">
+        <nav id='navToAdd'>
+            <a href="index.html">
+                <img src="svg/logo.svg" class="logo" alt="">
+            </a>
+            <ul>
+                <li class="main_nav active">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="main_nav">
+                    <a href="about.html">ABOUT</a>
+                </li>
+                <li class="main_nav" id="drop">
+                <p>PRODUCT</p>
+                <ul class="down">
+                    <li class="down_li">
+                        <a href="round_product.html">ROUNDE BAR</a>
+                    </li>
+                    <li class="down_li">
+                        <a href="flat_product.html">FLAT BAR</a>
+                    </li>
+                    <li class="down_li">
+                        <a href="hexagon_product.html">HEXAGON BAR</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="main_nav" id="block">
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav> 
+    </div>
+        <div class="header">
+        <div class="static">
+                <div id="slider" >
+                <div id="slides-container" style="position:absolute;left:0px"
+                    ><img src="img/slider/1.jpg" alt="1.jpg" class="slide"/
+                    ><img src="img/slider/2.jpg" alt="2.jpg" class="slide"/
+                    ><img src="img/slider/3.jpg" alt="3.jpg" class="slide"/
+                    ><img src="img/slider/4.jpg" alt="4.jpg" class="slide"/
+                ></div>
+                <span class="sliderControl">
+                    <span class="btn left"  onclick="change(-1)">&lt</span>
+                    <span class="btn right" onclick="change(1)">&gt</span>
+                </span>
+                <span id="circle"></span>        
+            </div>
+            <script src="script/detectWidth.js"></script>
+            <script src="script/slider.js"></script>
+        </div>
+    </div>
+    <div id="body" >
+        <table class="e" bgcolor="#00686B" >
+            <tr class="e">
+                <td class="e">
+                     <table style="background-color: #00686B;" cellspacing="6" class="e" >
+                        <tr cellspacing="2" style="background-color: #DED1AF;" class="e">
+                            <th colspan="6">
+  <div style="width: 100%;"><h1 class="calcWidthHome">Round Bar</h1><a href="round_product.html" style="margin-top: 24px;" class="btn">More Detail</a></div>
+  							</th>
+                        </tr>
+                        <tr  style="background-color: #00686B;" class="e">
+                            <td class="img_td" ><img class="td_img" src="img/r1.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/r2.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/r3.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/r4.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/r5.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/r6.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="e">
+                <td class="e">
+                    <table style="background-color: #00686B;" cellspacing="6" class="e" >
+                        <tr style="background-color: #DED1AF;" class="e">
+                            <th colspan="6">
+  <div style="width: 100%;"><h1 class="calcWidthHome">Flat Bar</h1><a href="flat_product.html" style="margin-top: 24px;" class="btn">More Detail</a></div>
+  
+                            </th>
+                             
+                        </tr>
+                            <td></td>
+                        </tr>
+                        <tr  style="background-color: #00686B;" class="e">
+                            <td class="img_td" ><img class="td_img" src="img/f1.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/f2.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/f3.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/f4.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/f5.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/f6.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="e">
+                <td class="e">
+                    <table style="background-color: #00686B;" cellspacing="6" class="e" >
+                        <tr style="background-color: #DED1AF;" class="e">
+                            <th colspan="6">
+  <div style="width: 100%;"><h1 class="calcWidthHome">Hexagon Bar</h1><a href="hex_product.html" style="margin-top: 24px;" class="btn">More Detail</a></div>
+  
+                            </th>
+                             
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr style="background-color: #00686B;" class="e">
+                            <td class="img_td" ><img class="td_img" src="img/h1.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/h2.png" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/h3.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/h4.jpg" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/h5.png" alt=""></td>
+                            <td class="img_td" ><img class="td_img" src="img/h6.png" alt=""></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+	</div>
+    <footer>
+        <div id="footerWraper">
+            <div class="footerItem">
+                <div>
+                    <h2><a href="index.html">Steel Trading Co.</a></h2>
+                    <p>
+                        All Contain Is Make By Ghulam Mustafa
+                    </p>
+                </div>
+            </div>
+            <div class="footerItem">
+                <form action="#">
+                    <input type="email" id="semail" placeholder="Email">
+                    <input type="submit" id="sub" value="Subscribe"/>
+                </form>
+            </div>
+            <div class="footerItem">
+                <div class="footerLinks">
+                    <span class="footerLink" >
+                        <object type="image/svg+xml" width="30px" data="svg/fb.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/twitter.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/gplus.svg" class="footerSvg"></object>
+                    </span>
+                    <span class="footerLink">
+                        <object type="image/svg+xml" width="30px" data="svg/mail.svg" class="footerSvg"></object>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/wishlist.js"></script> 
+    <script src="script/cart.js"></script> 
+</body>
+</html>
